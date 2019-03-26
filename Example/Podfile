@@ -1,0 +1,6 @@
+use_frameworks!
+target 'SGTToolSDK_Tests' do
+  pod 'SGTToolSDK', :path => '../'
+  
+  
+end
