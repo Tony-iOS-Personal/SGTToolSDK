@@ -1,5 +1,7 @@
 PODS:
-  - SGTToolSDK (0.1.0)
+  - SGTToolSDK (0.1.0):
+    - SGTToolSDK/Extension (= 0.1.0)
+  - SGTToolSDK/Extension (0.1.0)
 
 DEPENDENCIES:
   - SGTToolSDK (from `../`)
@@ -9,7 +11,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  SGTToolSDK: 5f73ee927780eafbf6c673468ce5e53306ffce33
+  SGTToolSDK: 1cae4006f5f0348903ebc56a8af5f58c4888926b
 
 PODFILE CHECKSUM: 438403fdf8149749df78d7bf11ad036eb2e0ecba
 

@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SGTToolSDK'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'A short description of SGTToolSDK.'
 
 # This description is used to generate tags and improve search results.
@@ -29,14 +29,21 @@ TODO: Add long description of the pod here.
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
-
+  
   s.source_files = 'SGTToolSDK/Classes/**/*'
+   
+  #二级目录
+  s.subspec 'Extension' do |ss|
+      ss.source_files = 'SGTToolSDK/Classes/Extension/*.{h,m}'
+  end
+ 
   
   # s.resource_bundles = {
   #   'SGTToolSDK' => ['SGTToolSDK/Assets/*.png']
   # }
 
    s.public_header_files = 'SGTToolSDK/Classes/**/*.h'
+   
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
 end
